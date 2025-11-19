@@ -1,0 +1,61 @@
+.stars-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  background: transparent;
+}
+
+.stars-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars-content {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  color: var(--star-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.size-2 {
+  width: 2px;
+  height: 2px;
+}
+
+.size-3 {
+  width: 3px;
+  height: 3px;
+}
+
+.layer-1 {
+  animation: animStar 50s linear infinite;
+}
+
+.layer-2 {
+  animation: animStar 100s linear infinite;
+}
+
+.layer-3 {
+  animation: animStar 150s linear infinite;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-2000px);
+  }
+}

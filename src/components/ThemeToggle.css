@@ -1,0 +1,35 @@
+.theme-icon {
+    color: var(--primary-light);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-icon:hover {
+    color: var(--primary-dark);
+}
+
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle i {
+    font-size: 20px;
+    color: var(--primary-light);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    transition: none;
+}
+
+.theme-toggle:hover i {
+    color: var(--primary);
+}
