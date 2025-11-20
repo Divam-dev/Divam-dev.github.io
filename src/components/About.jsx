@@ -19,7 +19,7 @@ export const About = () => {
             <span>JavaScript</span>
           </div>
           <div className="tech-stack-card">
-            <img src="src/assets/typescript-icon.svg" className="tech-icon" />
+            <img src="/typescript-icon.svg" className="tech-icon" />
             <span>TypeScript</span>
           </div>
           <div className="tech-stack-card">
@@ -40,11 +40,11 @@ export const About = () => {
             <span>HTML/CSS</span>
           </div>
           <div className="tech-stack-card">
-            <img src="src/assets/tailwind-icon.svg" className="tech-icon" />
+            <img src="/tailwind-icon.svg" className="tech-icon" />
             <span>Tailwind CSS</span>
           </div>
           <div className="tech-stack-card">
-            <img src="src/assets/csharp-icon.svg" className="tech-icon" />
+            <img src="/csharp-icon.svg" className="tech-icon" />
             <span>C#</span>
           </div>
           <div className="tech-stack-card">
@@ -56,7 +56,7 @@ export const About = () => {
             <span>SQL</span>
           </div>
           <div className="tech-stack-card">
-            <img src="src/assets/mongodb-icon.svg" className="tech-icon" />
+            <img src="/mongodb-icon.svg" className="tech-icon" />
             <span>MongoDB</span>
           </div>
           <div className="tech-stack-card">

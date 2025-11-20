@@ -10,7 +10,7 @@ export const Projects = () => {
           {/* Project 1 */}
           <div className="project-card">
             <div className="project-image">
-              <img src="src/assets/project1.png" alt="Project One" />
+              <img src="/project1.png" alt="Project One" />
             </div>
 
             <div className="project-content">
@@ -33,7 +33,7 @@ export const Projects = () => {
           {/* Project 2 */}
           <div className="project-card">
             <div className="project-image">
-              <img src="src/assets/project2.png" alt="Project Two" />
+              <img src="/project2.png" alt="Project Two" />
             </div>
 
             <div className="project-content">
@@ -56,7 +56,7 @@ export const Projects = () => {
           {/* Project 3 */}
           <div className="project-card">
             <div className="project-image">
-              <img src="src/assets/project3.png" alt="Project Three" />
+              <img src="/project3.png" alt="Project Three" />
             </div>
 
             <div className="project-content">
