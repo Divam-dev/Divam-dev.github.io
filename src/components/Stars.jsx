@@ -19,34 +19,39 @@ const Stars = () => {
   const mediumStars = useMemo(() => generateStars(200), []);
   const largeStars = useMemo(() => generateStars(100), []);
 
+  const renderStars = (boxShadow, sizeClass = "") => {
+    const tiles = [0, 1, 2, 3, 4];
+
+    return tiles.map((i) => (
+      <div
+        key={i}
+        style={{
+          position: "absolute",
+          left: `${i * 2000}px`,
+          width: "2000px",
+          height: "100%",
+        }}
+      >
+        <div
+          className={`stars-content ${sizeClass}`}
+          style={{ boxShadow }}
+        ></div>
+        <div
+          className={`stars-content ${sizeClass}`}
+          style={{ boxShadow, top: "2000px" }}
+        ></div>
+      </div>
+    ));
+  };
+
   return (
     <div className="stars-container">
-      <div className="stars-layer layer-1">
-        <div className="stars-content" style={{ boxShadow: smallStars }}></div>
-        <div
-          className="stars-content"
-          style={{ boxShadow: smallStars, top: "2000px" }}
-        ></div>
-      </div>
+      <div className="stars-layer layer-1">{renderStars(smallStars)}</div>
       <div className="stars-layer layer-2">
-        <div
-          className="stars-content size-2"
-          style={{ boxShadow: mediumStars }}
-        ></div>
-        <div
-          className="stars-content size-2"
-          style={{ boxShadow: mediumStars, top: "2000px" }}
-        ></div>
+        {renderStars(mediumStars, "size-2")}
       </div>
       <div className="stars-layer layer-3">
-        <div
-          className="stars-content size-3"
-          style={{ boxShadow: largeStars }}
-        ></div>
-        <div
-          className="stars-content size-3"
-          style={{ boxShadow: largeStars, top: "2000px" }}
-        ></div>
+        {renderStars(largeStars, "size-3")}
       </div>
     </div>
   );

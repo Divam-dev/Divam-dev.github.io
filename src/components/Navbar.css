@@ -22,12 +22,17 @@
     max-height: 50px;
 }
 
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: 2rem;
-    float: right;
 }
 
 .nav-links a {
@@ -47,4 +52,14 @@
 
 .nav-links a:hover::after {
     color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0.5rem 5%;
+    }
 }

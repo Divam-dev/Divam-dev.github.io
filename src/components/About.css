@@ -93,7 +93,8 @@
   padding: 1.5rem;
   box-shadow: 0 4px 12px var(--shadow-color);
   gap: 0.5rem;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .tech-stack-card:hover {
@@ -111,4 +112,35 @@
   margin-top: 0.5rem;
   font-size: 1.1rem;
   color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 50px 0;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .tech-stack-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .tech-stack-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .tech-stack-card i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tech-stack-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
 }
