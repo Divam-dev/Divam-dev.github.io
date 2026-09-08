@@ -16,7 +16,7 @@ export const Footer = () => {
 
   return (
     <p className="footer">
-      © 2024 <span onClick={handleClicks}>Divam</span>. All rights reserved.
+      © 2026 <span onClick={handleClicks}>Divam</span>. All rights reserved.
     </p>
   );
 };

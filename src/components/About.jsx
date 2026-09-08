@@ -6,10 +6,10 @@ export const About = () => {
       <div className="about-container">
         <h2 className="about-title">About Me</h2>
         <p className="about-description">
-          I am a Full Stack Web Developer who enjoys building websites and
+          I am a Full-Stack Web Developer who loves building websites and
           applications that people genuinely enjoy using. I focus on turning
           ideas into real, functional projects and finding simple solutions to
-          complex problems. I’m always learning new technologies, exploring
+          complex problems. I am always learning new technologies, exploring
           different approaches, and trying out new ideas to improve my skills.
         </p>
         <h2 className="tech-stack-title">Tech Stack</h2>
@@ -31,7 +31,7 @@ export const About = () => {
             <span>React</span>
           </div>
           <div className="tech-stack-card">
-            <i class="fa-brands fa-vuejs fa-2x"></i>
+            <i className="fa-brands fa-vuejs fa-2x"></i>
             <span>Vue.js</span>
           </div>
 
@@ -48,7 +48,7 @@ export const About = () => {
             <span>C#</span>
           </div>
           <div className="tech-stack-card">
-            <i class="fa-brands fa-python fa-2x"></i>
+            <i className="fa-brands fa-python fa-2x"></i>
             <span>Python</span>
           </div>
           <div className="tech-stack-card">

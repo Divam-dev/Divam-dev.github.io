@@ -10,7 +10,30 @@ export const Projects = () => {
           {/* Project 1 */}
           <div className="project-card">
             <div className="project-image">
-              <img src="/project1.png" alt="Project One" />
+              <img src="/project1.png" alt="Auris" />
+            </div>
+
+            <div className="project-content">
+              <h3 className="project-title">Auris</h3>
+              <p className="project-description">
+                A powerful, feature-rich Discord music bot built with Discord.js,
+                TypeScript, and Lavalink.
+              </p>
+
+              <a
+                href="https://github.com/Divam-dev/Auris"
+                target="_blank"
+                className="project-btn"
+              >
+                View Project
+              </a>
+            </div>
+          </div>
+
+          {/* Project 2 */}
+          <div className="project-card">
+            <div className="project-image">
+              <img src="/project2.png" alt="Codegram" />
             </div>
 
             <div className="project-content">
@@ -30,33 +53,10 @@ export const Projects = () => {
             </div>
           </div>
 
-          {/* Project 2 */}
-          <div className="project-card">
-            <div className="project-image">
-              <img src="/project2.png" alt="Project Two" />
-            </div>
-
-            <div className="project-content">
-              <h3 className="project-title">AYNT</h3>
-              <p className="project-description">
-                A Telegram bot that enables users to download videos from
-                multiple social media platforms with simple URL sharing.
-              </p>
-
-              <a
-                href="https://github.com/Divam-dev/aynt"
-                target="_blank"
-                className="project-btn"
-              >
-                View Project
-              </a>
-            </div>
-          </div>
-
           {/* Project 3 */}
           <div className="project-card">
             <div className="project-image">
-              <img src="/project3.png" alt="Project Three" />
+              <img src="/project3.png" alt="UniSchedule" />
             </div>
 
             <div className="project-content">
